@@ -1,0 +1,11 @@
+
+bpython:S1192ß"IDefine a constant instead of duplicating this literal ":memory:" 3 times.(ğÃ¹Ã
+Hpython:S1066î"/Merge this if statement with the enclosing one.(Ùù•®
+vpython:S104"gFile "sqldata.py" has 1.088 lines, which is greater than 1.000 authorized. Split it into smaller files.
+Wpython:S1707"?Add a citation of the person who can best explain this comment.(“à
+\python:S1707"?Add a citation of the person who can best explain this comment.(´¡¢üÿÿÿÿ
+Mpython:S1721¯"/Remove the parentheses after this "if" keyword.(Úƒâ›ûÿÿÿÿ
+Npython:S139æ"6Move this trailing comment on the previous empty line.(Í
+Xpython:S1707æ"?Add a citation of the person who can best explain this comment.(Í
+Npython:S139›"6Move this trailing comment on the previous empty line.(¢îÇ´
+rpython:S3776„"TRefactor this function to reduce its Cognitive Complexity from 20 to the 15 allowed.(¦èÛñûÿÿÿÿ
