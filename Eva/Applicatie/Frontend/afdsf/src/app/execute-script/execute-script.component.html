@@ -1,0 +1,21 @@
+<table>
+  <tr>
+    <th>
+      Property
+    </th>
+  </tr>
+  <tr *ngFor="let property of properties">
+    <td>
+      <div class="four columns">
+        <div>  {{property.PropertyExtractionScript}}</div>
+      </div>
+      <div class="two columns">
+        <input type="checkbox" (change)="desiredPropertyOnChange(property ,$event.target.checked)">
+      </div>
+    </td>
+  </tr>
+</table>
+<div class="two columns">
+  <button mat-button (click)="executeScripts()">Visualize property</button>
+</div>
+
