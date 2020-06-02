@@ -2,7 +2,7 @@ import os
 from os import listdir
 from os.path import isfile
 
-from ScriptConfig import ScriptConfig
+from ScriptComponent.ScriptConfig import ScriptConfig
 
 
 class PythonInstaller(object):
@@ -18,13 +18,13 @@ class PythonInstaller(object):
         os.system("python -m pip install --upgrade pip")
 
     def installTarball(self):
-        os.system("python -m pip install download-tarball")
+        os.system("pip install download-tarball")
 
     def installLocalLibrary(self, eigenschap):
-        libraryPath = self.script_config.get_location() + "/" + os.path.splitext(eigenschap)[0] + "/Libraries/"
+        libraryPath = self.script_config.get_location()  + os.path.splitext(eigenschap)[0] + "\\Libraries\\"
         libraries = self.getFilesFromDirectory(libraryPath)
         for library in libraries:
-            os.system("python -m pip install \"" + libraryPath + library + "/\"")
+            os.system("pip install \"" + libraryPath + library + "/\"")
 
     def getFilesFromDirectory(self, scriptPath):
         fileList = []

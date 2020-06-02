@@ -1,4 +1,4 @@
-from VariableNode import VariableNode
+from FilterVariablesComponent.VariableNode import VariableNode
 
 
 class AVLTree(object):

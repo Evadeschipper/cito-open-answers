@@ -1,4 +1,4 @@
-from PythonInstaller import PythonInstaller
+from InstallComponent.PythonInstaller import PythonInstaller
 
 
 class InstallerFactory(object):

@@ -3,7 +3,7 @@ import os
 import git
 from git import Repo
 
-from ScriptConfig import ScriptConfig
+from ScriptComponent.ScriptConfig import ScriptConfig
 
 
 class ResourceHandlerGithub(object):

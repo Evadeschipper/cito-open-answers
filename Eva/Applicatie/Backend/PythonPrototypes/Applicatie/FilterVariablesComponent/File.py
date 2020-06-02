@@ -1,5 +1,5 @@
-from Level import Level
-from ReaderFactory import ReaderFactory
+from FilterVariablesComponent.Level import Level
+from FilterVariablesComponent.ReaderFactory import ReaderFactory
 
 
 class File(object):

@@ -1,4 +1,4 @@
-from Reader import ExcelReader
+from FilterVariablesComponent.Reader import ExcelReader
 
 
 class ReaderFactory(object):

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Applicatie/Backend/PythonPrototypes/Prototypes/Github/scripts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Applicatie/Frontend/Eva" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Documentatie/Technisch ontwerp/Bijlagen/H-Github/scripts" vcs="Git" />
+  </component>
+</project>

@@ -1,7 +1,8 @@
+import os
 class ScriptConfig(object):
 
     def get_location(self):
-        location = "./ScriptComponent/scripts/"
+        location = os.path.dirname(os.path.realpath(__file__))+"\\Scripts\\"
         return location
 
     def get_max_number_of_rows(self):

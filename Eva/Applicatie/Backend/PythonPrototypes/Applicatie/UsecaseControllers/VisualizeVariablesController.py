@@ -1,8 +1,8 @@
 import json
 
-from File import File
-from Script import Script
+from ScriptComponent.Script import Script
 
+from FilterVariablesComponent.File import File
 
 class VisualizeVariablesController(object):
     file = File()

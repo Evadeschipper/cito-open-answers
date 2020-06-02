@@ -1,4 +1,4 @@
-from AVLtree import AVLTree
+from FilterVariablesComponent.AVLtree import AVLTree
 
 
 class Level(object):

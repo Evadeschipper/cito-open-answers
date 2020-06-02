@@ -5,11 +5,10 @@ from flask import send_file
 from flask_cors import CORS
 
 from UsecaseControllers.VisualizeVariablesController import VisualizeVariablesController
-from ResourceHandlerFactory import ResourceHandlerFactory
+from ScriptResourceComponent.ResourceHandlerFactory import ResourceHandlerFactory
 
 app = Flask(__name__)
 cors = CORS(app)
-
 
 @app.route('/uploadFile', methods=['POST'])
 def upload():

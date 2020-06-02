@@ -2,8 +2,8 @@ import importlib
 import os
 from os import listdir
 from os.path import isfile
-
-from ScriptConfig import ScriptConfig
+import sys
+from ScriptComponent.ScriptConfig import ScriptConfig
 import base64
 
 class PythonExecuter(object):
@@ -19,7 +19,8 @@ class PythonExecuter(object):
         for file in files:
             if (desired_module == file):
                 try:
-                    module = importlib.import_module(directory_name + "." + os.path.splitext(file)[0])
+                    sys.path.insert(1,  self.script_config.get_location())
+                    module = importlib.import_module("." + os.path.splitext(file)[0],package=os.path.splitext(file)[0])
                     importlib.reload(module)
                 except Exception as e:
                     raise Exception(e)
@@ -50,7 +51,7 @@ class PythonExecuter(object):
         return None
 
     def get_function(self, module):
-        module = self.get_class(module)
+      
         if hasattr(module, "function_name"):
             function = getattr(module, module.function_name)
             return function

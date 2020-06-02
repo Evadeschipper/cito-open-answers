@@ -1,4 +1,4 @@
-from ResourceHandlerGithub import ResourceHandlerGithub
+from ScriptResourceComponent.ResourceHandlerGithub import ResourceHandlerGithub
 
 
 class ResourceHandlerFactory(object):
